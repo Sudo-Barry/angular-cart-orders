@@ -19,5 +19,6 @@ export class CartComponent implements OnInit {
   ngOnInit() {}
   updateSum(event): void {
     this.total = this.sum * event.target.value;
+    this.itemQuantity = event.target.value;
   }
 }
